@@ -3,7 +3,7 @@
   "files": {
     ".gitignore": "3c05e4288c303c1c70a0dc8e1591bab15d62f3f38e36de353cee3365a071b6fd",
     "LICENSE": "f60dac6fcc6e19cec1dc506fb72ce717f9f840cb695d44ecd394cc748f0b02af",
-    "NOTICE.md": "5724a46559357d5d7386ce95a6aae35c6d26e44a3c6f14f1ba14721fdf6a19ca",
+    "NOTICE.md": "95221717fda72ebde9613eb4e583de3fc1232b8e65291f82ed7720b78a379ba7",
     "README.md": "e21f12896d6f43ea0e165a57cfb879c4a062a9c792b0c52882a7e9a35f69b165",
     "requirements.txt": "9f8f30a9d2419a082e25d70c686d4fef58d8070a2329623291ec358fa324bf4a",
     "configs/extension_protocol.json": "1f35cd0cb99f74691221b1024646a3a30261ae4ad6c74953afe83cc1908b6186",
@@ -31,7 +31,7 @@
     "revision_v2/implementation_addendum.json": "c66875821dbb05f71f25a2d34603d1b70d9d072aeb51df751f42d3548901b030",
     "revision_v2/protocol.json": "844d8e47926bb9fa5f8df2d74fc0295f251f8e904eac747c51c4650d5f64e07e",
     "scripts/check_release.py": "1e303d46e6f59689de0df1a34e4f8518047e2d0d41f66fc41a298b7781618214",
-    "scripts/fetch_public_data.py": "77da1a1f23bd1f590264681427ba053587db33f3e00a884681d1b8c525e29f2b",
+    "scripts/fetch_public_data.py": "75259462eb744fface0dd8a89e402cdc006f15a4c81d812defb4e76a257d3354",
     "src/ecg_denoise.py": "1c7a9cf4f1505a5dda596808ad64473e22289c83645f2831f19ec7995c4c8f52",
     "work/check_inference.py": "2cfbaa9c21c5be1cb50741e8c61646fff2d1c55ed1c5c7cfa9c89327034941ce",
     "work/idt_followup.py": "fa5b358c764b0a0c66255cea37826b6c94596e754e8f6507607b3103f992ee0b",
@@ -83,7 +83,9 @@
     "sources/original/quiet_frozen_config.json": "9ab5cacfb685bb3c09948a4b7954122823c128f70c09d665811882551e7560a7",
     "sources/original/validate_project.py": "55a4b9ae25018c3d35a0aa9a7f81ac96823e0f4cc0c2f3f2b88e7dfc8e5280a2",
     "work/reviewer_revision_20261017/ANALYSIS_PROTOCOL.md": "a5a7f786dc2174e02606425037a295050112dcaa96232d1acf9175f0416e8894",
-    "work/reviewer_revision_20261017/run_revision_analysis.py": "d21710a3c44c676415d5d6868febe08ff2a258d544f5691df2cc6e27fdcfefa5"
+    "work/reviewer_revision_20261017/run_revision_analysis.py": "d21710a3c44c676415d5d6868febe08ff2a258d544f5691df2cc6e27fdcfefa5",
+    "work/skill_helpers/statistical-analysis/assumption_checks.py": "3e37a4e04407b5f040f103962ed0e73935d114d3892ee45b5a06a1da42c10341",
+    "work/skill_helpers/statistical-analysis/LICENSE.md": "0207337e5ae2b28c15c647054fafaddafb159be533f9723825d7a5aa2610f21d"
   },
   "scope": "research code, frozen settings and numerical summaries; no editorial or private documents"
 }

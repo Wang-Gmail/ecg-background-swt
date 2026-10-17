@@ -2,6 +2,9 @@ from pathlib import Path
 import shutil,urllib.request,hashlib
 import wfdb
 ROOT=Path(__file__).resolve().parents[1]
+from wfdb.io import download
+for db,expected in [('mitdb','1.0.0'),('nstdb','1.0.0'),('ludb','1.0.1')]:
+    assert download.get_version(db)==expected, 'Database latest version changed; use the pinned source version documented in README.'
 for db,records in [('mitdb',['100','101','103']),('nstdb',['ma','em','bw'])]:
     target=ROOT/'data'/db;target.mkdir(parents=True,exist_ok=True)
     wfdb.dl_database(db,str(target),records=records,annotators='all',keep_subdirs=False,overwrite=False)

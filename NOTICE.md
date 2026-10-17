@@ -4,6 +4,8 @@ Project additions are by Nan Wang. The repository contains computational methods
 
 The nonlocal-means implementation in revision_v2/code/methods_v2.py is an attributed port of Brian Tracey’s NLM_1dDarbon.m, copyright 2013 Brian Tracey. Its original BSD license and MATLAB source are in revision_v2/sources/nlm_author. That license remains applicable to the ported core.
 
+The unmodified diagnostic helper work/skill_helpers/statistical-analysis/assumption_checks.py was supplied by Scientific Agent Skills, K-Dense Inc., under its declared MIT license. It is not represented as original project code.
+
 EMD-signal and other dependencies are installed separately and retain their own licenses. Public source databases retain their original licenses and attribution requirements. Do not interpret the code repository license as a relicensing of those databases.
 
 OpenAI Codex assisted code, analysis and documentation. Scientific Agent Skills supplied procedural guidance: Kassis et al. (2026), Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents, https://doi.org/10.48550/arXiv.2609.00065. Humans retain scientific responsibility.
