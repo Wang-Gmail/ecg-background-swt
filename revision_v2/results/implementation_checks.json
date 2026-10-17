@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "checks": {
+    "nlm_patch_oracle_0.15": 7.216449660063518e-16,
+    "nlm_patch_oracle_0.6": 2.858824288409778e-15,
+    "nlm_patch_oracle_2.0": 3.608224830031759e-16,
+    "original_background_parity": 0.0,
+    "zero_c_global_linear": 0.0,
+    "zero_c_global_sqrt": 0.0,
+    "zero_c_subband_linear": 0.0,
+    "zero_c_subband_sqrt": 0.0
+  },
+  "source_hashes": {
+    "protocol.json": "844d8e47926bb9fa5f8df2d74fc0295f251f8e904eac747c51c4650d5f64e07e",
+    "implementation_addendum.json": "c66875821dbb05f71f25a2d34603d1b70d9d072aeb51df751f42d3548901b030",
+    "methods_v2.py": "f144f022d2d645b342f75755feab22e8de3d777d53b7b72fb606d14e48a961dd"
+  },
+  "author_matlab_runtime_parity": false,
+  "validation": "independent direct patch-sum weights and invariants"
+}

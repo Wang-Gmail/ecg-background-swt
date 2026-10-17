@@ -1,0 +1,23 @@
+{
+  "records": 60,
+  "conditions_per_record": 18,
+  "methods": [
+    "raw",
+    "local_frozen",
+    "gate_linear_subband",
+    "gate_sqrt_subband",
+    "emd_firm"
+  ],
+  "qrs_metrics_aggregation": "mean per input, then record, then equal record means",
+  "reference_beats_scored_once": 543,
+  "reference_signal_f1_mean": 0.9788486676721971,
+  "noisy_reference_events_per_method": 9774,
+  "bootstrap_draws": 20000,
+  "bootstrap_unit": "ECG record",
+  "bootstrap_seed": 20261017,
+  "prd_formula": "100 * RMSE_valid / RMS_valid(reference), after whole-clip mean centering",
+  "prd_is_rescaling_of_whole_normalized_rmse": true,
+  "whole_prd_squared_check_max": 1.474376176702208e-13,
+  "multiplicity_control": false,
+  "clinical_endpoint": "QRS beat-detection task, not diagnosis"
+}

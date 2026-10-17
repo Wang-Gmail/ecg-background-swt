@@ -1,0 +1,76 @@
+{
+  "chosen": {
+    "gate_linear_global": {
+      "source": "global",
+      "shape": "linear",
+      "alpha": 3,
+      "c": 0.5
+    },
+    "gate_sqrt_global": {
+      "source": "global",
+      "shape": "sqrt",
+      "alpha": 3,
+      "c": 1
+    },
+    "gate_linear_subband": {
+      "source": "subband",
+      "shape": "linear",
+      "alpha": 3,
+      "c": 1
+    },
+    "gate_sqrt_subband": {
+      "source": "subband",
+      "shape": "sqrt",
+      "alpha": 3,
+      "c": 2
+    },
+    "nlm": {
+      "kappa": 0.6
+    }
+  },
+  "selection": {
+    "gate_linear_global": {
+      "feasible": true,
+      "candidates": 30,
+      "active_nrmse": 0.33200100231061214,
+      "quiet_nrmse": 0.04885700922081703,
+      "whole_nmse": 0.05227560322187517
+    },
+    "gate_sqrt_global": {
+      "feasible": true,
+      "candidates": 30,
+      "active_nrmse": 0.33090361710729144,
+      "quiet_nrmse": 0.04098409228937986,
+      "whole_nmse": 0.05168284294899181
+    },
+    "gate_linear_subband": {
+      "feasible": true,
+      "candidates": 30,
+      "active_nrmse": 0.3329718895263018,
+      "quiet_nrmse": 0.029051621262231646,
+      "whole_nmse": 0.05150996934084415
+    },
+    "gate_sqrt_subband": {
+      "feasible": true,
+      "candidates": 30,
+      "active_nrmse": 0.33174950172878703,
+      "quiet_nrmse": 0.023656536607696486,
+      "whole_nmse": 0.051299303139011765
+    },
+    "nlm": {
+      "feasible": false,
+      "candidates": 6,
+      "active_nrmse": 0.3622247476965613,
+      "quiet_nrmse": 0.08618486500329058,
+      "whole_nmse": 0.07087237130418826
+    }
+  },
+  "active_cap": 0.3337534802572238,
+  "development_cases": 72,
+  "source_hashes": {
+    "protocol.json": "844d8e47926bb9fa5f8df2d74fc0295f251f8e904eac747c51c4650d5f64e07e",
+    "implementation_addendum.json": "c66875821dbb05f71f25a2d34603d1b70d9d072aeb51df751f42d3548901b030",
+    "methods_v2.py": "f144f022d2d645b342f75755feab22e8de3d777d53b7b72fb606d14e48a961dd"
+  },
+  "holdout_seen_during_selection": false
+}

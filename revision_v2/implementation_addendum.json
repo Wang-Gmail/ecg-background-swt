@@ -1,0 +1,23 @@
+{
+  "status":"saved before any v2 development scores or new holdout outcomes",
+  "reason":"ALDTF supplementary archive retrieved and all four PDFs inspected; only tables/figures, no author source; lambda/alpha initialization and complete executable pipeline not sufficiently specified for author-code parity",
+  "strong_external_comparator":{
+    "method":"Tracey and Miller 2012 ECG nonlocal means (NLM)",
+    "doi":"10.1109/TBME.2012.2208964",
+    "author_source":"https://www.mathworks.com/matlabcentral/fileexchange/41762-non-local-means-nlm-denoising-for-time-series-applied-to-ecg",
+    "download":"sources/nlm_author_code.zip; version 1.1.0, public source, original copyright/license retained",
+    "port":"Python vectorization of author Darbon cumulative-distance loops; validate against an independent literal patch-sum implementation, not claim MATLAB runtime parity",
+    "search_half_width_samples":1000,
+    "patch_half_width_samples":10,
+    "bandwidth":"kappa times the 90th percentile of observed finest-SWT local robust scales; no clean reference, true injected sigma or masks used",
+    "kappa_candidates":[0.3,0.6,0.9,1.2,1.8,2.4],
+    "selection":"same development active cap and quiet objective; declare infeasible and fallback to minimum whole NMSE if needed",
+    "author_demo_setting":"kappa=0.6 separately retained as fixed reference with the declared input-only scale estimator",
+    "boundaries":"author code leaves first patch_half_width+1 and last patch_half_width samples NaN; port returns input there. All primary/control scoring excludes one second, so these filled samples do not enter endpoints",
+    "scope":"reliable author-core comparator for morphology-preserving denoising; not a claim of current state of the art, nor reproduction of all original paper tables"
+  },
+  "stress_fraction_clarification":"Protocol fractions define nominal rectangular support before cosine edges; exact positive-envelope fraction and valid-region occupancy saved for every input. Fraction 1 uses a fully continuous envelope.",
+  "matched_fixed_operating_point":{"alpha":3,"c":2,"arms":"all four source-by-shape combinations", "reason":"fixed settings isolate mechanism choices; development-selected points additionally address operating-point differences", "timing":"declared before any new holdout or stress outcomes; development candidate grid unchanged"},
+  "methods_in_new_evaluation":["raw","local_frozen","background_original","gate_linear_global","gate_sqrt_global","gate_linear_subband","gate_sqrt_subband","fixed_linear_global","fixed_sqrt_global","fixed_linear_subband","fixed_sqrt_subband","gate_historical","gate_common_old","lowpass_old","nlm_tuned","nlm_fixed_0.6"],
+  "timing":"timings are secondary host measurements; method order rotated deterministically across cases; no population or embedded performance claim"
+}

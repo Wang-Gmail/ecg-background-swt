@@ -1,0 +1,22 @@
+{
+  "k": 1,
+  "alpha": 4.0,
+  "candidate_count": 18,
+  "feasible_count": 0,
+  "fallback": true,
+  "active_cap": 0.3337534802572238,
+  "active_nrmse": 0.47276820314392765,
+  "quiet_nrmse": 0.10352033352367773,
+  "whole_nmse": 0.09592589868189304,
+  "development_inputs": 72,
+  "library": "EMD-signal",
+  "version": "1.9.0",
+  "padding": 512,
+  "max_imf": 6,
+  "spline_kind": "cubic",
+  "nbsym": 2,
+  "original_frozen_hash": "87a81345d068e636481904e84ab525072dd2d8cd43e835f4a0cf8afb8ee7bac2",
+  "plan_hash": "0c8e60d4a007deeeb11a257f0c61cf891978cd17fbc8da614c514011c0d366af",
+  "script_hash": "ddee60233fb8fa8d80e1f35fa97a31d8462c278d7b00cbce94d289b66d56e4c8",
+  "holdout_processed_during_selection": false
+}

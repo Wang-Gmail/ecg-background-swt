@@ -1,0 +1,156 @@
+{
+  "original_grid": {
+    "active_cap": 0.3739656707116019,
+    "selected": [
+      {
+        "family": "gate_linear_global",
+        "candidate": 66,
+        "parameters": {
+          "source": "global",
+          "shape": "linear",
+          "alpha": 4.0,
+          "c": 0.5
+        },
+        "candidates": 30,
+        "feasible_candidates": 1,
+        "active_nrmse": 0.371843913664009,
+        "quiet_nrmse": 0.061970763666819625,
+        "whole_nmse": 0.06984382706931033
+      },
+      {
+        "family": "gate_sqrt_global",
+        "candidate": 169,
+        "parameters": {
+          "source": "global",
+          "shape": "sqrt",
+          "alpha": 4.0,
+          "c": 1.5
+        },
+        "candidates": 30,
+        "feasible_candidates": 3,
+        "active_nrmse": 0.371971074049174,
+        "quiet_nrmse": 0.02195737445633163,
+        "whole_nmse": 0.06428051808584576
+      },
+      {
+        "family": "gate_linear_subband",
+        "candidate": 292,
+        "parameters": {
+          "source": "subband",
+          "shape": "linear",
+          "alpha": 6.0,
+          "c": 2.0
+        },
+        "candidates": 30,
+        "feasible_candidates": 6,
+        "active_nrmse": 0.3701805935609107,
+        "quiet_nrmse": 0.0126959788376446,
+        "whole_nmse": 0.0630692609184387
+      },
+      {
+        "family": "gate_sqrt_subband",
+        "candidate": 393,
+        "parameters": {
+          "source": "subband",
+          "shape": "sqrt",
+          "alpha": 6.0,
+          "c": 2.5
+        },
+        "candidates": 30,
+        "feasible_candidates": 7,
+        "active_nrmse": 0.373240347158878,
+        "quiet_nrmse": 0.014516658086492149,
+        "whole_nmse": 0.0634289926667715
+      },
+      {
+        "family": "local",
+        "candidate": 402,
+        "parameters": {
+          "alpha": 4.0
+        },
+        "candidates": 5,
+        "feasible_candidates": 5,
+        "active_nrmse": 0.37026304030851676,
+        "quiet_nrmse": 0.07345654820086013,
+        "whole_nmse": 0.07149461111775693
+      }
+    ]
+  },
+  "dense_grid": {
+    "active_cap": 0.3739656707116019,
+    "selected": [
+      {
+        "family": "gate_linear_global",
+        "candidate": 79,
+        "parameters": {
+          "source": "global",
+          "shape": "linear",
+          "alpha": 5.0,
+          "c": 1.0
+        },
+        "candidates": 99,
+        "feasible_candidates": 5,
+        "active_nrmse": 0.3713388012057077,
+        "quiet_nrmse": 0.032292570577529586,
+        "whole_nmse": 0.06415001280269239
+      },
+      {
+        "family": "gate_sqrt_global",
+        "candidate": 169,
+        "parameters": {
+          "source": "global",
+          "shape": "sqrt",
+          "alpha": 4.0,
+          "c": 1.5
+        },
+        "candidates": 99,
+        "feasible_candidates": 11,
+        "active_nrmse": 0.371971074049174,
+        "quiet_nrmse": 0.02195737445633163,
+        "whole_nmse": 0.06428051808584576
+      },
+      {
+        "family": "gate_linear_subband",
+        "candidate": 293,
+        "parameters": {
+          "source": "subband",
+          "shape": "linear",
+          "alpha": 6.0,
+          "c": 2.25
+        },
+        "candidates": 99,
+        "feasible_candidates": 20,
+        "active_nrmse": 0.37368229296000527,
+        "quiet_nrmse": 0.010412523507283975,
+        "whole_nmse": 0.0639080704260687
+      },
+      {
+        "family": "gate_sqrt_subband",
+        "candidate": 383,
+        "parameters": {
+          "source": "subband",
+          "shape": "sqrt",
+          "alpha": 5.0,
+          "c": 2.75
+        },
+        "candidates": 99,
+        "feasible_candidates": 29,
+        "active_nrmse": 0.3732992138382449,
+        "quiet_nrmse": 0.011535365660030961,
+        "whole_nmse": 0.06380490393046606
+      },
+      {
+        "family": "local",
+        "candidate": 402,
+        "parameters": {
+          "alpha": 4.0
+        },
+        "candidates": 9,
+        "feasible_candidates": 9,
+        "active_nrmse": 0.37026304030851676,
+        "quiet_nrmse": 0.07345654820086013,
+        "whole_nmse": 0.07149461111775693
+      }
+    ]
+  }
+}

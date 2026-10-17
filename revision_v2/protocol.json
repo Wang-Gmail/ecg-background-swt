@@ -1,0 +1,30 @@
+{
+  "protocol_version": "v2.0",
+  "created_local_date": "2026-10-15",
+  "status_at_creation": "before this round's gate development scores and new holdout results",
+  "registration": "local timestamped plan, not public preregistration",
+  "development": {"database": "MIT-BIH", "records": [100,101,103], "starts_s": [30,150], "duration_s": 30, "noise": ["awgn","ma_channel0"], "snr_db": [0,6,12], "seeds": [11,22], "cases": 72},
+  "historical_status": "old LUDB and MIT-BIH outputs already inspected; used for hypothesis formation, not new blinded evidence",
+  "holdout": {"database": "LUDB 1.0.1", "selection": "2,5,8,...,179; 60 records; disjoint from earlier 1,4,...,178", "lead": "II", "duration_s": 10, "resampling": "500 to 360 Hz, resample_poly 18/25, mean centered", "primary_noise": ["awgn","ma_channel1"], "secondary_noise": ["bandlimited_gaussian_35_150Hz"], "snr_db": [0,6,12], "seeds": [6101,6102,6103], "burst_intervals_s": [[2,3.3],[6,7.3]], "shared_jitter_s": [-0.15,0.15], "noise_pool_s": [1080,1780], "selection_after_results": false},
+  "matched_factorial": {
+    "source": ["global_finest_subband","per_subband"],
+    "shape": ["linear_excess","square_root_excess"],
+    "linear_weight": "max(1-c*b/s,0) for s>0, otherwise zero",
+    "square_root_weight": "sqrt(max(1-(c*b/s)^2,0)) for s>0, otherwise zero",
+    "threshold": "alpha*s_j*weight(source,shape)",
+    "shared_settings": {"wavelet":"sym4", "levels":4, "scale_window_s":1, "hop_s":0.25, "background_quantile":0.2, "padding_samples":512, "shrinkage":"firm, upper=2*lower", "extra_gate_smoothing":"none in any factorial arm"},
+    "alpha_grid": [1,2,3,4,6], "c_grid": [0.5,1,1.5,2,2.5,3], "candidates_per_arm":30,
+    "local_reference_alpha_grid": [1,2,3,4,6],
+    "selection": "minimize mean quiet nRMSE among development candidates with active nRMSE <= 1.01*best development local mean; if infeasible, declare and select minimum whole NMSE",
+    "original_background": "alpha=3,c=2 retained separately, never silently replaced",
+    "primary_contrasts": ["per_subband_square_root vs per_subband_linear", "per_subband_square_root vs global_square_root"],
+    "curve_assessment": "compare frozen development-selected operating points; any further frontier evaluated from development only"
+  },
+  "strong_neighbor": {"candidate": "ALDTF 2025", "rule":"retrieve and inspect public supplementary material before implementing; save implementation-fidelity addendum before its development scores; do not claim author-code parity without evidence"},
+  "stress": {"records":"first, fourth, seventh, ... of the 60 new holdout records: 2,11,...,173; 20 records", "noise":["awgn","ma_channel1"], "snr_db":6, "seeds":[7401,7402], "whole_clip_envelope_positive_fraction":[0.1,0.25,0.4,0.6,0.8,1.0], "bursts":[1,4], "geometry":"equal length cells covering ten seconds; each cell has a centered burst with duration fraction*cell length; 100 ms cosine edges capped at one quarter burst length", "continuous":"fraction=1 has envelope identically one; execute once per record/noise/seed, not duplicate for burst count", "expected_inputs":880, "missing_regions":"NA when quiet/active mask has no valid samples; never substitute zero"},
+  "metrics": {"valid_margin_s":1, "quiet":"envelope == 0", "active":"envelope > .999", "transition":"0 < envelope < .999", "boundary_neighborhood_s":0.2, "primary":["quiet_nrmse","active_nrmse"], "secondary":["quiet_rmse_mv","active_rmse_mv","rmse_mv","snr_gain_db","quiet P/QRS/T interval errors"]},
+  "statistics": {"unit":"ECG record", "within_record":"equal-weight mean across declared conditions before between-method comparison", "contrast":"100*(mean record metric method A / mean record metric method B - 1)", "uncertainty":"paired-record percentile bootstrap, 20000 draws", "bootstrap_seed":15102026, "interpretation":"descriptive intervals; no unplanned multiplicity-adjusted significance claims; convenience sample, shared physical noise source", "subgroups":"report AWGN, recorded MA and bandlimited Gaussian separately; do not conceal subgroup failures with pooling"},
+  "working_utility_rule": {"quiet_reduction_min_pct":20, "active_cost_max_pct":2, "status":"engineering research tolerance, not clinical noninferiority margin"},
+  "provenance": "input hashes, frozen configurations, case keys and implementation source retained; denoisers receive observation only",
+  "paper": "create a separate new manuscript; preserve all prior manuscripts and results; conclusions determined by observed comparisons"
+}

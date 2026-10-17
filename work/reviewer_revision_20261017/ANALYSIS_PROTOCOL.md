@@ -1,0 +1,12 @@
+# Additional computational analysis protocol
+
+Fixed locally on 17 October 2026 before evaluating the additional holdout outcomes. These are exploratory analyses, not preregistered clinical endpoints.
+
+## Additional analyses fixed before their results
+
+1. Add a transparent EMD threshold baseline using EMD-signal 1.9.0, cubic envelopes, symmetric extrema extension nbsym=2, default stopping settings and 512-sample reflection padding. Decompose at most six IMFs, retain residual and all unthresholded modes. Firm-threshold the first k IMFs using T_i = a MAD(IMF_i)/0.67448975 sqrt(2 ln N), where N is the unpadded clip length. Candidate k=1,2,3 and a=0.125,0.25,0.5,1,2,4: eighteen candidates. This is a specified EMD baseline, not a claimed reproduction of another author's full denoiser.
+2. Choose EMD parameters only on the original 72 MIT-BIH development inputs with the manuscript's original active-error constraint and quiet-error objective. If no candidate meets the constraint, choose minimum whole normalized MSE and disclose fallback. Freeze selected parameters before processing the 60-record holdout. Do not alter existing method settings.
+3. Evaluate frozen EMD on all 1080 original AWGN/MA primary inputs. Regenerate all inputs and compare input hashes to the saved original manifest. Save per-input and per-record metrics. Report quiet/active/whole microvolt RMSE and whole PRD, retaining original aggregation rules.
+4. Add exploratory XQRS downstream evaluation, WFDB 4.3.1 default configuration, learn=True, no detector tuning and no reference passed to any denoiser or detector. Evaluate the reference and original inputs plus frozen local SWT, linear subband, square-root subband and selected EMD. Include all 60 original LUDB holdout records, 18 noisy inputs each. Run on the complete 10-s clip and score only 1-9 s. Convert the original expert QRS peak annotations from 500 to 360 Hz by rounding. Use one-to-one matching with maximum 150-ms absolute error, maximizing matches then minimizing matched absolute errors. Report TP/FP/FN, sensitivity, PPV and F1; use record means and 20000 paired record bootstrap draws (seed 20261017) for descriptive intervals and paired F1 differences. No diagnostic or clinical noninferiority claim. Save prediction positions for audit and do not exclude difficult records.
+5. Summarize saved PRD only after verifying denominator and scoring region. Use existing original results for the original eight methods; independently confirm regenerated local/gate metrics against saved rows.
+

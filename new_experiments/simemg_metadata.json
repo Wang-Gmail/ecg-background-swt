@@ -1,0 +1,27 @@
+{
+  "status": "completed",
+  "source": "SimEMG V1",
+  "doi": "10.17632/yx5pb66hwz.1",
+  "subjects": 14,
+  "simultaneous_recording_groups": 37,
+  "paired_files": 110,
+  "methods": [
+    "gate_linear_global",
+    "gate_linear_subband",
+    "gate_sqrt_global",
+    "gate_sqrt_subband",
+    "local_frozen",
+    "raw"
+  ],
+  "rows": 660,
+  "shared_reference_column_exact": true,
+  "sample_rate_original_hz": 500,
+  "sample_rate_analysis_hz": 360,
+  "amplitude_units_per_mv": 200,
+  "valid_margin_s": 1,
+  "archive_sha256": "f407b3dce51997b41a0a85b7520fe9953ee349d212cc33ad638570288bebec5e",
+  "frozen_config_sha256": "87a81345d068e636481904e84ab525072dd2d8cd43e835f4a0cf8afb8ee7bac2",
+  "code_sha256": "31d602ac2579ec91b05080e0a9b288736505fd472c9938a406625f167962b8f5",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "reference_caution": "Shoulder electrode reference, not physiological noise-free truth"
+}

@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "records": 60,
+  "inputs": 1080,
+  "rows": 5400,
+  "input_hashes_all_match": true,
+  "compared_original_outputs": 4320,
+  "max_original_metric_difference": 7.105427357601002e-15,
+  "emd_frozen_hash": "f8b642c09f8d4240eee4fc6d3fc7010988a1e1963444fa204cd5acc4086887a9",
+  "plan_hash": "0c8e60d4a007deeeb11a257f0c61cf891978cd17fbc8da614c514011c0d366af",
+  "detector": "WFDB XQRS",
+  "wfdb": "4.3.1",
+  "learn": true,
+  "matching_window_ms": 150,
+  "scoring": "1 <= time < 9 seconds",
+  "detector_tuned": false,
+  "analysis": "post-review exploratory",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "versions": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pandas": "3.0.6",
+    "pywt": "1.8.0"
+  },
+  "script_hash": "ddee60233fb8fa8d80e1f35fa97a31d8462c278d7b00cbce94d289b66d56e4c8"
+}
